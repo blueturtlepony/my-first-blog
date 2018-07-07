@@ -4,7 +4,23 @@
     </head>
     <body>
       <h1>I'm not a header,no no </h1>
-      <h2>I'm the better headline</h2>
+
+<br>
+<br>
+
+
+
+      <h2>Blogposts</h2>
+      {% for post in posts %}
+          <div>
+              <p>published: {{ post.published_date }}</p>
+              <h3><a href="">{{ post.title }}</a></h3>
+              <p>{{ post.text|linebreaksbr }}</p>
+          </div>
+      {% endfor %}
+
+<br>
+<br>
 
         <div>
         <h2> Welcome, you fools </h2>
@@ -13,7 +29,7 @@
         </div>
 
         <div>
-        <h2> Puns for the hons! </h2>
+        <h2> Puns for the huns! </h2>
         <p> Hey, this is awesome possum. It's purrrrrfect. <br>I like ur ice :D -<strong>thx Sabrina</strong> <p>
           <p> For Everyone in my group (and the rest) who wants to get a song stuck in their head: <br> <a href="https://www.youtube.com/watch?v=PUCgC_TukKg">Click Me,I'm not clickbait, maybe :D</a>
         </div>
